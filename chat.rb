@@ -4,7 +4,7 @@ require "dotenv/load"
 c = AI::Chat.new
 c.system("You are an expert nutritionist. Do your best to estimate the number of calories in the user-provided image(s).")
 
-c.model = "o4-mini" # Web search not supported with 4.1-nano
+c.model = "o4-mini" # Web search not supported with 4.1-nano, which is default on ai-chat gem
 c.web_search = true
 
 c.schema = '{
